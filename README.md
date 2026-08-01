@@ -56,7 +56,7 @@ Hi there! I'm **Ankit Kumar Singh**, a passionate developer who loves turning id
   <table>
     <tr>
       <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=httpsankuu&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github" alt="GitHub Stats" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=httpsankuu&theme=github_dark" alt="GitHub Stats" />
       </td>
       <td>
         <img src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark&hide_border=true" alt="GitHub Streak" />
@@ -64,7 +64,7 @@ Hi there! I'm **Ankit Kumar Singh**, a passionate developer who loves turning id
     </tr>
     <tr>
       <td colspan="2" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=httpsankuu&layout=compact&theme=github_dark&hide_border=true" alt="Top Languages" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=httpsankuu&theme=github_dark" alt="Top Languages" />
       </td>
     </tr>
   </table>
@@ -75,10 +75,8 @@ Hi there! I'm **Ankit Kumar Singh**, a passionate developer who loves turning id
 ## 🐍 My Contributions Get Eaten
 
 <!-- The snake animation is generated automatically by the GitHub Action in
-     .github/workflows/snake.yml and refreshes every 12 hours.
-     ▶️ FIRST TIME ONLY: open the Actions tab → "Generate Snake" →
-     "Run workflow" once so the snake image gets created. After that it
-     updates by itself. -->
+     .github/workflows/snake.yml and refreshes every 12 hours (or run it
+     manually from the Actions tab anytime). -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake-dark.svg">
