@@ -6,11 +6,9 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3200&pause=800&color=58A6FF&center=true&vCenter=true&width=520&lines=Welcome+to+my+GitHub+profile!;I+build+for+the+web;I+love+solving+problems;Always+learning+new+things" alt="Typing animation" />
 
-<!-- ✏️ SOCIAL LINKS: replace the placeholder URLs below with your real profiles -->
 <p>
-  <a href="https://www.linkedin.com/in/your-username"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/your-username"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X (Twitter)"></a>
-  <a href="mailto:your-email@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/ankit-kumar-singh-24681b36b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:ankitkumar143563@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   <a href="https://github.com/httpsankuu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
 </p>
 
@@ -92,13 +90,12 @@ Hi there! I'm **Ankit Kumar Singh**, a passionate developer who loves turning id
 
 ## 📌 Featured Projects
 
-<!-- ✏️ Replace the example rows below with your best 3–5 repositories -->
+<!-- ✏️ Tweak these descriptions to match what each project actually does -->
 
 | 🚀 Project | 📝 Description |
 |---|---|
-| [**Awesome Project**](https://github.com/httpsankuu/repo-name) | A short, punchy description of what it does and why it's cool. |
-| [**Awesome Project**](https://github.com/httpsankuu/repo-name) | A short, punchy description of what it does and why it's cool. |
-| [**Awesome Project**](https://github.com/httpsankuu/repo-name) | A short, punchy description of what it does and why it's cool. |
+| [**MrCompress.com**](https://github.com/httpsankuu/MrCompress.com) | A web tool for compressing files and images quickly and easily. |
+| [**Resume Analyzer AI**](https://github.com/httpsankuu/resume-analyzer-ai) | An AI-powered analyzer that reviews resumes and gives instant, actionable feedback. |
 
 ---
 
