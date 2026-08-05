@@ -53,21 +53,13 @@ Hi there! I'm **Ankit Kumar Singh**, a passionate developer who loves turning id
 ## 📊 GitHub Stats
 
 <div align="center">
-  <table>
-    <tr>
-      <td>
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=httpsankuu&theme=github_dark" alt="GitHub Stats" />
-      </td>
-      <td>
-        <img src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark&hide_border=true" alt="GitHub Streak" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=httpsankuu&theme=github_dark" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
+
+<img src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark&hide_border=true" alt="GitHub Streak" />
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=httpsankuu&theme=github-compact&hide_border=true" alt="Contribution Activity Graph" />
+
 </div>
 
 ---
