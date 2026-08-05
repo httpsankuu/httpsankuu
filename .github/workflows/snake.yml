@@ -1,14 +1,10 @@
 # ------------------------------------------------------------------
-# Contribution Snake Generator
+# Contribution Snake Generator — zero external actions
 #
-# This workflow renders your GitHub contribution graph into a snake
-# animation (SVG + GIF) and publishes it to the "output" branch of
-# this repository. The README.md displays it with:
+# Uses only bash + Python (no actions/checkout, no Platane/snk,
+# no pages deployer) so it works regardless of Actions permissions.
 #
-#   https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake-dark.svg
-#
-# It runs every 12 hours and can also be triggered manually from the
-# Actions tab of your repository.
+# Runs every 12 hours and can be triggered manually.
 # ------------------------------------------------------------------
 
 name: Generate Snake
@@ -27,27 +23,136 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Generate the snake files
-        uses: Platane/snk@v3
-        with:
-          github_user_name: httpsankuu
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif
+      - name: Generate and deploy contribution snake
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
 
-      - name: Deploy snake to the "output" branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: output
-          publish_dir: ./dist
-          force_orphan: true
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: "chore: regenerate contribution snake"
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # ── 1. Fetch contribution data ──────────────────────────────────
+          echo "Fetching contributions for httpsankuu..."
+          curl -fsSL "https://github-contributions-api.jogruber.de/v4/httpsankuu" -o contrib.json
+          python3 -c "import json; d=json.load(open('contrib.json')); print(f'  → {len(d[\"contributions\"])} days of data')"
+
+          # ── 2. Generate animated snake SVGs ─────────────────────────────
+          mkdir -p dist
+          python3 << 'PYEOF'
+          import json, os, math
+          from datetime import datetime, date, timedelta
+
+          with open('contrib.json') as f:
+              data = json.load(f)
+
+          contributions = data.get('contributions', [])
+          date_to_level = {c['date']: c['level'] for c in contributions}
+
+          last_date = (datetime.strptime(contributions[-1]['date'], '%Y-%m-%d').date()
+                       if contributions else date.today())
+
+          days_to_sat = (5 - last_date.weekday()) % 7
+          end_sat     = last_date + timedelta(days=days_to_sat)
+          start_sun   = end_sat   - timedelta(weeks=52, days=6)
+
+          COLS, ROWS       = 53, 7
+          CELL, PITCH, PAD = 10, 13, 16
+          W = PAD * 2 + COLS * PITCH - 3
+          H = PAD * 2 + ROWS * PITCH - 3
+
+          grid = [
+              [date_to_level.get(
+                  (start_sun + timedelta(days=col * 7 + row)).strftime('%Y-%m-%d'), 0)
+               for row in range(ROWS)]
+              for col in range(COLS)
+          ]
+
+          path = [
+              (col, row)
+              for col in range(COLS)
+              for row in (range(ROWS) if col % 2 == 0 else range(ROWS - 1, -1, -1))
+          ]
+
+          def cx(col): return PAD + col * PITCH + CELL // 2
+          def cy(row): return PAD + row * PITCH + CELL // 2
+
+          total_len = int(sum(
+              math.hypot(cx(path[i][0]) - cx(path[i-1][0]),
+                         cy(path[i][1]) - cy(path[i-1][1]))
+              for i in range(1, len(path))
+          )) + 1
+          snake_len = max(total_len // 8, 60)
+
+          def make_svg(palette, fname):
+              cells = ''.join(
+                  f'<rect x="{PAD+col*PITCH}" y="{PAD+row*PITCH}" '
+                  f'width="{CELL}" height="{CELL}" rx="2" '
+                  f'fill="{palette[min(grid[col][row], 4)]}"/>'
+                  for col in range(COLS)
+                  for row in range(ROWS)
+              )
+              pts = ' '.join(f'{cx(c)},{cy(r)}' for c, r in path)
+              svg = (
+                  f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}">'
+                  f'<rect width="{W}" height="{H}" rx="6" fill="{palette[0]}"/>'
+                  f'{cells}'
+                  f'<defs><linearGradient id="sg">'
+                  f'<stop offset="0%"   stop-color="#39d353"/>'
+                  f'<stop offset="50%"  stop-color="#ffaa00"/>'
+                  f'<stop offset="100%" stop-color="#ff5555"/>'
+                  f'</linearGradient></defs>'
+                  f'<polyline points="{pts}" fill="none" stroke="url(#sg)"'
+                  f' stroke-width="9" stroke-linecap="round" stroke-linejoin="round"'
+                  f' stroke-dasharray="{snake_len} {total_len}" stroke-dashoffset="0">'
+                  f'<animate attributeName="stroke-dashoffset"'
+                  f' from="0" to="-{total_len}" dur="4s" repeatCount="indefinite"/>'
+                  f'</polyline>'
+                  f'</svg>'
+              )
+              os.makedirs('dist', exist_ok=True)
+              with open(fname, 'w') as fh:
+                  fh.write(svg)
+              print(f'  → {fname}')
+
+          make_svg(
+              ['#ebedf0', '#9be9a8', '#40c463', '#30a14e', '#216e39'],
+              'dist/github-contribution-grid-snake.svg'
+          )
+          make_svg(
+              ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'],
+              'dist/github-contribution-grid-snake-dark.svg'
+          )
+          print('Snake SVGs generated!')
+          PYEOF
+
+          # ── 3. Push SVGs to the output branch ───────────────────────────
+          echo "Deploying to output branch..."
+          REPO_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/httpsankuu/httpsankuu.git"
+
+          mkdir output_push
+          cd output_push
+          git init -q
+          git remote add origin "$REPO_URL"
+
+          # Check if output branch exists on remote
+          if git ls-remote --exit-code origin output > /dev/null 2>&1; then
+              git fetch origin output --depth=1 -q
+              git checkout -b output FETCH_HEAD
+          else
+              git checkout --orphan output
+          fi
+
+          git rm -rf . -q 2>/dev/null || true
+
+          cp ../dist/github-contribution-grid-snake.svg .
+          cp ../dist/github-contribution-grid-snake-dark.svg .
+          git add github-contribution-grid-snake.svg github-contribution-grid-snake-dark.svg
+
+          if git diff --cached --quiet; then
+              echo "No changes — snake is already up to date."
+          else
+              git commit -m "chore: regenerate contribution snake [skip ci]"
+              git push origin output --force -q
+              echo "✅ Snake deployed to output branch!"
+          fi
