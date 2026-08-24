@@ -4,6 +4,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/ankit-kumar-singh-24681b36b/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://x.com/who_ankith"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="https://www.instagram.com/whoankith/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
   <a href="mailto:ankitkumar143563@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
@@ -22,7 +23,7 @@ Passionate about building things that are fast, clean, and useful. Currently gri
 ### 📈 Contribution Graph
 
 <p align="center">
-  <img width="90%" src="https://ghchart.rshah.org/58A6FF/httpsankuu" alt="Ankit's GitHub Contribution Chart" />
+  <img width="90%" src="https://ghchart.rshah.org/138F06/httpsankuu" alt="Ankit's GitHub Contribution Chart" />
 </p>
 
 ---
@@ -73,6 +74,4 @@ Passionate about building things that are fast, clean, and useful. Currently gri
 
 ---
 
-<p align="center">
-  <sub>Made with ❤️ by <b>Ankit Kumar Singh</b></sub>
-</p>
+
