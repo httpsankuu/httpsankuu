@@ -12,20 +12,20 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake animation
-        uses: Platane/snk@v3
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk@v3
         with:
           github_user_name: httpsankuu
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=58A6FF&color_dots[0]=ebedf0&color_dots[1]=9ecae1&color_dots[2]=6baed6&color_dots[3]=3182bd&color_dots[4]=08519c&color_bg=ffffff
-            dist/github-contribution-grid-snake-dark.svg?color_snake=58A6FF&color_dots[0]=161b22&color_dots[1]=0d2f4e&color_dots[2]=0d4f7e&color_dots[3]=0d79bf&color_dots[4]=58A6FF&color_bg=0d1117
+            dist/github-contribution-grid-snake.svg?color_snake=58A6FF&color_dots[0]=ebedf0&color_dots[1]=9ecae1&color_dots[2]=6baed6&color_dots[3]=3182bd&color_dots[4]=08519c
+            dist/github-contribution-grid-snake-dark.svg?color_snake=58A6FF&color_dots[0]=161b22&color_dots[1]=0d2f4e&color_dots[2]=0d4f7e&color_dots[3]=0d79bf&color_dots[4]=58A6FF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+      - uses: peaceiris/actions-gh-pages@v4
         with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          publish_branch: output
+          force_orphan: true
