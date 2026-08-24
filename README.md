@@ -1,37 +1,48 @@
-<div align="center">
+<h1 align="center">Ankit Kumar Singh</h1>
+<p align="center">Machine Learning Engineer · Web Developer</p>
 
-# 👋 Hi, I''m Ankit Kumar Singh
-
-### `Machine Learning Engineer · Web Developer`
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=3200&pause=800&color=58A6FF&center=true&vCenter=true&width=580&lines=Welcome+to+my+GitHub+profile!;Machine+Learning+%2B+Web+Development;Building+fast%2C+clean+%26+useful+apps;Always+solving+problems%2C+always+learning" alt="Typing animation" />
-
-<p>
-  <a href="https://www.linkedin.com/in/ankit-kumar-singh-24681b36b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/who_ankith"><img src="https://img.shields.io/badge/X%2FTwitter-000000?style=for-the-badge&logo=x&logoColor=white" alt="X / Twitter"></a>
-  <a href="mailto:ankitkumar143563@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-  <a href="https://github.com/httpsankuu"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/ankit-kumar-singh-24681b36b/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+  <a href="https://x.com/who_ankith"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
+  <a href="mailto:ankitkumar143563@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
 
-<img src="https://komarev.com/ghpvc/?username=httpsankuu&style=for-the-badge&color=58A6FF" alt="Profile views" />
-
-</div>
-
----
-
-## 👨‍💻 About Me
-
-Hey! I''m **Ankit Kumar Singh** — a developer passionate about **Machine Learning** and **Web Development**. I love building things that are fast, clean, and actually useful. Right now I''m sharpening my **DSA & Competitive Programming** skills to write smarter, more efficient code.
-
-- 🔭 Currently building: **MrCompress.com** & **Resume Analyzer AI**
-- 🌱 Currently grinding: **DSA · Algorithms · Competitive Programming**
-- 💼 Open to: **Internships · Freelance · Open Source Collaborations**
-- 💬 Ask me about: **HTML, CSS, JavaScript, React, Python, or ML concepts**
-- ⚡ Fun fact: I believe great code is simple, readable, and fun to write
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=httpsankuu&style=flat-square&color=58A6FF" alt="Profile views" />
+</p>
 
 ---
 
-## 🛠️ Languages & Tools
+### 🎯 About
+
+Passionate about building things that are fast, clean, and useful. Currently grinding **DSA & Competitive Programming** while shipping ML and web projects.
+
+---
+
+### 📈 Contribution Graph
+
+<p align="center">
+  <img width="90%" src="https://ghchart.rshah.org/58A6FF/httpsankuu" alt="Ankit's GitHub Contribution Chart" />
+</p>
+
+---
+
+### 🚧 What I'm Doing Right Now
+
+- 📊 Building: **MrCompress.com** & **Resume Analyzer AI**
+- 🧠 Studying: **DSA · Algorithms · Competitive Programming**
+- 💼 Open to: **Internships · Freelance · Open Source**
+
+---
+
+### 🧱 Things I've Built
+
+- **[MrCompress.com](https://github.com/httpsankuu/MrCompress.com)** — web tool for compressing files and images quickly and easily *(HTML · CSS · JS)*
+- **[Resume Analyzer AI](https://github.com/httpsankuu/resume-analyzer-ai)** — AI-powered resume reviewer that gives instant, actionable feedback *(Python · AI/ML)*
+
+---
+
+### 🛠️ Languages & Tools
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
@@ -55,66 +66,16 @@ Hey! I''m **Ankit Kumar Singh** — a developer passionate about **Machine Learn
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=httpsankuu&show_icons=true&theme=github_dark&hide_border=true&count_private=true&rank_icon=github" alt="GitHub Stats" />
-<img width="49%" src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
-
-<br/>
-
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=httpsankuu&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages" />
-
-<br/>
-
-<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=httpsankuu&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph" />
-
-</div>
-
----
-
-## 🐍 My Contributions Get Eaten
+### 🐍 My Contributions Get Eaten
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake eating my contributions" src="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake.svg" />
 </picture>
 
 ---
 
-## 📌 Featured Projects
-
-<div align="center">
-
-<a href="https://github.com/httpsankuu/MrCompress.com">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=MrCompress.com&theme=github_dark&hide_border=true&cache_seconds=1800" alt="MrCompress.com" />
-</a>
-<a href="https://github.com/httpsankuu/resume-analyzer-ai">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=resume-analyzer-ai&theme=github_dark&hide_border=true&cache_seconds=1800" alt="Resume Analyzer AI" />
-</a>
-
-</div>
-
-<br/>
-
-| 🚀 Project | 🛠️ Stack | 📝 Description |
-|---|---|---|
-| [**MrCompress.com**](https://github.com/httpsankuu/MrCompress.com) | HTML · CSS · JS | A web tool for compressing files and images quickly and easily. |
-| [**Resume Analyzer AI**](https://github.com/httpsankuu/resume-analyzer-ai) | Python · AI/ML | An AI-powered analyzer that reviews resumes and gives instant, actionable feedback. |
-
----
-
-<div align="center">
-
-**Thanks for stopping by! 🙌**
-
-![Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
-
-⭐ *If you like what I build, consider giving my repositories a star!*
-
-<sub>Made with ❤️ by <b>Ankit Kumar Singh</b></sub>
-
-</div>
-
+<p align="center">
+  <sub>Made with ❤️ by <b>Ankit Kumar Singh</b></sub>
+</p>
