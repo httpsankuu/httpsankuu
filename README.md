@@ -59,19 +59,16 @@ Hey! I''m **Ankit Kumar Singh** — a developer passionate about **Machine Learn
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=httpsankuu&show_icons=true&theme=github_dark&hide_border=true&count_private=true" alt="GitHub Stats" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=httpsankuu&show_icons=true&theme=github_dark&hide_border=true&count_private=true&rank_icon=github" alt="GitHub Stats" />
+<img width="49%" src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark-blue&hide_border=true" alt="GitHub Streak" />
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=httpsankuu&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages" />
+<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=httpsankuu&layout=compact&theme=github_dark&hide_border=true&langs_count=8" alt="Top Languages" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=httpsankuu&theme=github-dark&hide_border=true" alt="GitHub Streak" />
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=httpsankuu&theme=github-compact&hide_border=true" alt="Contribution Activity Graph" />
+<img width="90%" src="https://github-readme-activity-graph.vercel.app/graph?username=httpsankuu&theme=github-compact&hide_border=true&area=true" alt="Contribution Activity Graph" />
 
 </div>
 
@@ -92,10 +89,10 @@ Hey! I''m **Ankit Kumar Singh** — a developer passionate about **Machine Learn
 <div align="center">
 
 <a href="https://github.com/httpsankuu/MrCompress.com">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=MrCompress.com&theme=github_dark&hide_border=true" alt="MrCompress.com" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=MrCompress.com&theme=github_dark&hide_border=true&cache_seconds=1800" alt="MrCompress.com" />
 </a>
 <a href="https://github.com/httpsankuu/resume-analyzer-ai">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=resume-analyzer-ai&theme=github_dark&hide_border=true" alt="Resume Analyzer AI" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=httpsankuu&repo=resume-analyzer-ai&theme=github_dark&hide_border=true&cache_seconds=1800" alt="Resume Analyzer AI" />
 </a>
 
 </div>
@@ -120,3 +117,4 @@ Hey! I''m **Ankit Kumar Singh** — a developer passionate about **Machine Learn
 <sub>Made with ❤️ by <b>Ankit Kumar Singh</b></sub>
 
 </div>
+
