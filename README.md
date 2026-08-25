@@ -2,6 +2,7 @@
 <p align="center">Machine Learning Engineer · Web Developer</p>
 
 <p align="center">
+  <a href="https://ankitcoded.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/ankit-kumar-singh-24681b36b/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://x.com/who_ankith"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
   <a href="https://www.instagram.com/whoankith/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
@@ -30,6 +31,7 @@ Passionate about building things that are fast, clean, and useful. Currently gri
 
 ### 🚧 What I'm Doing Right Now
 
+- 🌐 Portfolio: **[ankitcoded.vercel.app](https://ankitcoded.vercel.app/)**
 - 📊 Building: **MrCompress.com** & **Resume Analyzer AI**
 - 🧠 Studying: **DSA · Algorithms · Competitive Programming**
 - 💼 Open to: **Internships · Freelance · Open Source**
