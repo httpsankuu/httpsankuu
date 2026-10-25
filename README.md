@@ -66,13 +66,10 @@ Passionate about building things that are fast, clean, and useful. Currently gri
 
 ---
 
-### 🐍 My Contributions Get Eaten
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/httpsankuu/httpsankuu/output/github-contribution-grid-snake.svg" />
-</picture>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=httpsankuu&show_icons=true&theme=radical&hide_title=false" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=httpsankuu&layout=compact&theme=radical" alt="Top Languages" />
+</p>
 
 ---
 
